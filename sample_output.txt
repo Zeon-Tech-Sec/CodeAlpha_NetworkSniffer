@@ -1,0 +1,99 @@
+22:13:20.000  DNS     192.168.1.10:5353 > 8.8.8.8:53  query example.com  71B
+22:13:20.049  DNS     8.8.8.8:53 > 192.168.1.10:5353  example.com -> 93.184.216.34  98B
+22:13:20.099  TCP     192.168.1.10:40000 > 93.184.216.34:80  [S]  54B
+22:13:20.150  HTTP    192.168.1.10:40000 > 93.184.216.34:80  [PA]  POST example.com/login  146B
+  !! cleartext-credentials: field 'password' (13 chars) sent to example.com/login from 192.168.1.10
+22:13:20.200  HTTP    192.168.1.10:40002 > 93.184.216.34:80  [PA]  GET example.com/admin  135B
+  !! cleartext-credentials: HTTP Basic auth to example.com/admin from 192.168.1.10
+22:13:20.250  TLS     192.168.1.10:40001 > 142.250.1.1:443  [PA]  ClientHello sni=www.google.com  129B
+22:13:20.299  FTP     192.168.1.10:40003 > 10.0.0.5:21  [PA]  PASS letmein  68B
+  !! cleartext-credentials: FTP login sent by 192.168.1.10 to 10.0.0.5
+22:13:20.349  DNS     192.168.1.10:5354 > 8.8.8.8:53  query mfrggzdfmztwq2lknnwg23tpobyxe43uovwgy3bamnxw4zlo.evil-c2.example  124B
+  !! dns-tunnel?: 192.168.1.10 queried unusual name mfrggzdfmztwq2lknnwg23tpobyxe43uovwgy3bamnxw4zlo.evil-c2.example
+22:13:20.400  TCP     10.0.0.99:4444 > 192.168.1.10:1  [S]  54B
+22:13:20.450  TCP     10.0.0.99:4444 > 192.168.1.10:2  [S]  54B
+22:13:20.500  TCP     10.0.0.99:4444 > 192.168.1.10:3  [S]  54B
+22:13:20.549  TCP     10.0.0.99:4444 > 192.168.1.10:4  [S]  54B
+22:13:20.599  TCP     10.0.0.99:4444 > 192.168.1.10:5  [S]  54B
+22:13:20.650  TCP     10.0.0.99:4444 > 192.168.1.10:6  [S]  54B
+22:13:20.700  TCP     10.0.0.99:4444 > 192.168.1.10:7  [S]  54B
+22:13:20.750  TCP     10.0.0.99:4444 > 192.168.1.10:8  [S]  54B
+22:13:20.799  TCP     10.0.0.99:4444 > 192.168.1.10:9  [S]  54B
+22:13:20.849  TCP     10.0.0.99:4444 > 192.168.1.10:10  [S]  54B
+22:13:20.900  TCP     10.0.0.99:4444 > 192.168.1.10:11  [S]  54B
+22:13:20.950  TCP     10.0.0.99:4444 > 192.168.1.10:12  [S]  54B
+22:13:21.000  TCP     10.0.0.99:4444 > 192.168.1.10:13  [S]  54B
+22:13:21.049  TCP     10.0.0.99:4444 > 192.168.1.10:14  [S]  54B
+22:13:21.099  TCP     10.0.0.99:4444 > 192.168.1.10:15  [S]  54B
+  !! port-scan: 10.0.0.99 sent SYNs to 15 ports on 1 host(s) within 10s
+22:13:21.150  TCP     10.0.0.99:4444 > 192.168.1.10:16  [S]  54B
+22:13:21.200  TCP     10.0.0.99:4444 > 192.168.1.10:17  [S]  54B
+22:13:21.250  TCP     10.0.0.99:4444 > 192.168.1.10:18  [S]  54B
+22:13:21.299  TCP     10.0.0.99:4444 > 192.168.1.10:19  [S]  54B
+22:13:21.349  TCP     10.0.0.99:4444 > 192.168.1.10:20  [S]  54B
+22:13:21.400  ICMP    10.0.0.99 > 192.168.1.20  echo-request  42B
+22:13:21.450  ICMP    10.0.0.99 > 192.168.1.21  echo-request  42B
+22:13:21.500  ICMP    10.0.0.99 > 192.168.1.22  echo-request  42B
+22:13:21.549  ICMP    10.0.0.99 > 192.168.1.23  echo-request  42B
+22:13:21.599  ICMP    10.0.0.99 > 192.168.1.24  echo-request  42B
+22:13:21.650  ICMP    10.0.0.99 > 192.168.1.25  echo-request  42B
+22:13:21.700  ICMP    10.0.0.99 > 192.168.1.26  echo-request  42B
+22:13:21.750  ICMP    10.0.0.99 > 192.168.1.27  echo-request  42B
+22:13:21.799  ICMP    10.0.0.99 > 192.168.1.28  echo-request  42B
+22:13:21.849  ICMP    10.0.0.99 > 192.168.1.29  echo-request  42B
+  !! ping-sweep: 10.0.0.99 pinged 10 hosts within 10s
+22:13:21.900  ICMP    10.0.0.99 > 192.168.1.30  echo-request  42B
+22:13:21.950  ICMP    10.0.0.99 > 192.168.1.31  echo-request  42B
+22:13:22.000  ARP     192.168.1.1 > 0.0.0.0  192.168.1.1 is-at aa:aa:aa:aa:aa:aa  42B
+22:13:22.049  ARP     192.168.1.1 > 0.0.0.0  192.168.1.1 is-at bb:bb:bb:bb:bb:bb  42B
+  !! arp-spoofing: 192.168.1.1 moved from aa:aa:aa:aa:aa:aa to bb:bb:bb:bb:bb:bb
+
+42 packets, 2493 bytes, 2.0s
+
+protocols
+  TCP          21   50.0%  ###############
+  ICMP         12   28.6%  #########
+  DNS           3    7.1%  ##
+  HTTP          2    4.8%  #
+  ARP           2    4.8%  #
+  TLS           1    2.4%  #
+  FTP           1    2.4%  #
+
+top sources
+  10.0.0.99                                           32
+  192.168.1.10                                         7
+  192.168.1.1                                          2
+  8.8.8.8                                              1
+
+top destination ports
+  80                                                   3
+  53                                                   2
+  5353                                                 1
+  443                                                  1
+  21                                                   1
+
+dns queries
+  example.com                                          1
+  mfrggzdfmztwq2lknnwg23tpobyxe43uovwgy3bamnxw4zlo.evil-c2.example       1
+
+tls server names
+  www.google.com                                       1
+
+http hosts
+  example.com                                          2
+
+busiest flows (bytes)
+  192.168.1.10:40000 <-> 93.184.216.34:80            200
+  192.168.1.10:5353 <-> 8.8.8.8:53                   169
+  192.168.1.10:40002 <-> 93.184.216.34:80            135
+  142.250.1.1:443 <-> 192.168.1.10:40001             129
+  192.168.1.10:5354 <-> 8.8.8.8:53                   124
+
+alerts (7)
+  cleartext-credentials: field 'password' (13 chars) sent to example.com/login from 192.168.1.10
+  cleartext-credentials: HTTP Basic auth to example.com/admin from 192.168.1.10
+  cleartext-credentials: FTP login sent by 192.168.1.10 to 10.0.0.5
+  dns-tunnel?: 192.168.1.10 queried unusual name mfrggzdfmztwq2lknnwg23tpobyxe43uovwgy3bamnxw4zlo.evil-c2.example
+  port-scan: 10.0.0.99 sent SYNs to 15 ports on 1 host(s) within 10s
+  ping-sweep: 10.0.0.99 pinged 10 hosts within 10s
+  arp-spoofing: 192.168.1.1 moved from aa:aa:aa:aa:aa:aa to bb:bb:bb:bb:bb:bb
